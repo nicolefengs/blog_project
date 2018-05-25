@@ -1,0 +1,64 @@
+2018-04-07 23:56:32,392 [Thread-232:1636] [blog.views:66] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-04-07 23:57:08,986 [Thread-233:6272] [blog.views:66] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-04-07 23:57:10,262 [Thread-243:6612] [blog.views:66] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-04-09 01:42:38,452 [Thread-9:7572] [blog.views:131] [views:comment_post] [ERROR]- replace() takes no keyword arguments
+2018-04-09 01:44:22,369 [Thread-11:6560] [blog.views:131] [views:comment_post] [ERROR]- replace() takes no keyword arguments
+2018-04-09 01:49:43,570 [Thread-28:8020] [blog.views:131] [views:comment_post] [ERROR]- replace() takes no keyword arguments
+2018-04-09 02:24:50,006 [Thread-7:7556] [blog.views:147] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:24:53,922 [Thread-2:7516] [blog.views:147] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:49:34,677 [Thread-2:6244] [blog.views:146] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:49:39,081 [Thread-2:7312] [blog.views:145] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:50:31,507 [Thread-2:7308] [blog.views:146] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:50:49,208 [Thread-4:6360] [blog.views:146] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:50:51,011 [Thread-5:1172] [blog.views:146] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:51:00,439 [Thread-7:7936] [blog.views:146] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:51:27,883 [Thread-8:6972] [blog.views:146] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:51:31,960 [Thread-2:620] [blog.views:147] [views:classify] [ERROR]- object of type 'Article' has no len()
+2018-04-09 02:54:09,642 [Thread-2:7804] [blog.views:147] [views:classify] [ERROR]- name 'c' is not defined
+2018-04-09 03:54:18,385 [Thread-7:4688] [blog.views:171] [views:do_reg] [ERROR]- Reverse for '' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2018-04-09 03:54:25,320 [Thread-8:7220] [blog.views:171] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'dijwie' for key 'username'")
+2018-04-09 03:54:28,688 [Thread-9:7852] [blog.views:171] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'dijwie' for key 'username'")
+2018-04-09 03:54:32,725 [Thread-10:6580] [blog.views:171] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'dijwie' for key 'username'")
+2018-04-09 03:56:07,264 [Thread-3:7312] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 03:56:10,290 [Thread-2:7652] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 03:57:37,018 [Thread-15:7240] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 03:58:33,283 [Thread-2:8068] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:00:58,703 [Thread-7:7800] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:01:40,414 [Thread-12:6552] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:01:45,663 [Thread-23:6596] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:01:47,333 [Thread-24:4760] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:03:06,725 [Thread-25:1884] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:03:11,948 [Thread-27:7932] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:05:15,281 [Thread-36:6016] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:05:31,165 [Thread-48:7524] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:06:23,423 [Thread-49:7596] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:07:43,367 [Thread-60:7456] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:07:44,608 [Thread-61:1152] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:07:46,230 [Thread-62:8156] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:09:21,122 [Thread-12:7524] [blog.views:113] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:09:54,536 [Thread-13:6888] [blog.views:113] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:10:58,996 [Thread-12:6744] [blog.views:113] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:11:21,885 [Thread-13:2148] [blog.views:113] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:12:24,225 [Thread-19:2756] [blog.views:113] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:14:33,370 [Thread-11:4504] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:20:00,832 [Thread-17:3412] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:24:18,697 [Thread-28:6888] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:29:12,211 [Thread-6:6608] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:30:40,596 [Thread-7:4060] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:32:26,152 [Thread-17:2160] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:33:43,621 [Thread-23:6444] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:33:48,561 [Thread-24:7676] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:33:59,577 [Thread-27:6276] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:34:08,964 [Thread-29:5568] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:34:41,916 [Thread-2:4976] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:34:55,570 [Thread-4:1620] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:35:29,925 [Thread-20:7124] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:37:10,711 [Thread-2:1488] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:37:16,201 [Thread-4:6912] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:37:22,286 [Thread-5:1620] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:37:23,839 [Thread-6:5188] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:37:56,753 [Thread-17:7100] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:38:49,266 [Thread-10:5496] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:39:01,368 [Thread-12:5896] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:39:07,096 [Thread-13:8028] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment
+2018-04-09 04:39:17,865 [Thread-24:6708] [blog.views:112] [views:article] [ERROR]- local variable 'articles' referenced before assignment

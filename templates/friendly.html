@@ -1,0 +1,13 @@
+{% extends 'bases.html' %}
+{% load staticfiles %}
+{% block left_content %}
+    <div class="content">
+      <div class="content-block friendly-content row">
+        <h2 class="title"><strong>本站友链</strong></h2>
+          {% for link in links %}
+              <div class="col-md-4 col-xs-6"><span data-toggle="tooltip" data-placement="bottom" title="点击进入 {{ link.title }} 站点"><a href="{{ link.callback_url }}">{{ link.title }}</a></span>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+<div class="quotes" style="margin-top:15px">
+    <a href="{% url 'index' %}">首页</a>
+    {% if article_list.has_previous %}
+        <a class="disabled" href="?page={{ article_list.previous_page_number }}{% if request.Get.year %}&year={{ request.Get.year }}{% endif %}{% if request.Get.month %}&month={{ request.Get.month }}{% endif %}">上一页</a>
+    {% else %}
+        <span class="disabled">上一页</span>
+    {% endif %}
+    {% for pagee in article_list %}
+        <a href="?page={{ article_list.number }}{% if request.Get.year %}&year={{ request.Get.year }}{% endif %}{% if request.Get.month %}&month={{ request.Get.month }}{% endif %}">{{ article_list.number }}</a>
+        {% if article_list.next_page_number != empty %}
+            <a href="?page={{ article_list.next_page_number }}{% if request.Get.year %}&year={{ request.Get.year }}{% endif %}{% if request.Get.month %}&month={{ request.Get.month }}{% endif %}">{{ article_list.next_page_number }}</a>
+            <a>...</a>
+        {% endif %}
+    {% endfor %}
+    {% if article_list.has_next %}
+        <a href="?page={{ article_list.next_page_number }}{% if request.Get.year %}&year={{ request.Get.year }}{% endif %}{% if request.Get.month %}&month={{ request.Get.month }}{% endif %}">下一页 &raquo;</a>
+    {% else %}
+      <a>下一页</a>
+    {% endif %}
+    {% if article_list.has_next %}
+        <a href="?page={{ article_list.paginator.num_pages }}{% if request.Get.year %}&year={{ request.Get.year }}{% endif %}{% if request.Get.month %}&month={{ request.Get.month }}{% endif %}">尾页 &raquo;</a>
+    {% else %}
+      <a>尾页</a>
+    {% endif %}
+
+</div>
+

@@ -1,0 +1,14 @@
+<nav class="page-nav">
+     {% if pageup %}
+     <span class="page-nav-prev" >上一篇<br /> <a href="?id={{ pageup }}" rel="prev">{{ arts.title }}</a></span>
+     {% else %}
+     <span class="page-nav-prev">上一篇<br /> <a rel="prev">无文章</a></span>
+     {% endif %}
+    {% if pagedown %}
+       <span class="page-nav-next">下一篇<br />
+        <a href="?id={{ pagedown }}" rel="next">{{ artss.title }}</a></span>
+     {% else %}
+        <span class="page-nav-next">下一篇<br />
+        <a  rel="next">无文章</a></span>
+    {% endif %}
+ </nav>

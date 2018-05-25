@@ -1,0 +1,33 @@
+{% extends 'bases.html' %}
+{% load staticfiles %}
+{% block left_content %}
+    <div class="content">
+        {% include 'ad.html' %}
+      <!--/banner-->
+      <div class="content-block new-content">
+        <h2 class="title"><strong>搜索结果</strong></h2>
+        <div class="row">
+            {% for article in article_list %}
+                 <div class="news-list">
+            <div class="news-img col-xs-5 col-sm-5 col-md-4"> <a target="_blank" href=""><img src="{{ article.im }}" alt="" style="width:220px; height: 150px"> </a> </div>
+            <div class="news-info col-xs-7 col-sm-7 col-md-8">
+              <dl>
+                <dt> <a href="{% url 'article' %}?id={{ article.id }}" target="_blank" >{{ article.title }}</a> </dt>
+                <dd><span class="name"><a href="" title="由 个人技术博客 发布" rel="author">{{ article.user  }}</a></span> <span class="identity"></span> <span class="time">{{ article.date_publish | date:'Y-m-d' }}</span></dd>
+                <dd class="text">{{ article.desc }}</dd>
+              </dl>
+              <div class="news_bot col-sm-7 col-md-8"> <span class="tags visible-lg visible-md">{% for tag in article.tag.all %}<a href="/">{{ tag.name }}</a></span>{% endfor %}<span class="look"> 共 <strong>{{ article.click_count }}</strong> 人围观，发现 <strong>{{ article.comment_set.all.count }}</strong> 个不明物体 </span> </div>
+            </div>
+          </div>
+    {% endfor %}
+        </div>
+        <!--<div class="news-more" id="pagination">
+        	<a href="">查看更多</a>
+        </div>-->
+      {% include 'pagination.html' %}
+
+      </div>
+    </div>
+
+
+{% endblock %}

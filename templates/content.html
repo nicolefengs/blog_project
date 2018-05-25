@@ -1,0 +1,90 @@
+{% extends 'bases.html' %}
+{% load staticfiles %}
+{% block left_content %}
+    <div class="content">
+      <header class="news_header">
+        <h2>{{ articles.title }}</h2>
+        <ul>
+          <li>{{ articles.user.username }} 发布于{{ articles.date_publish | date:'Y-m-d' }}</li>
+          <li>栏目：<a href="" name="cate" target="_blank">{{ articles.category.name }}</a></li>
+          <li>共 <strong>{{ articles.click_count }}</strong> 人围观 </li>
+          <li><strong>{{ articles.comment_set.all.count }}</strong> 个不明物体</li>
+        </ul>
+      </header>
+      <article class="news_content">
+            {{ articles.content | safe }}
+      </article>
+{#      <div class="zambia"><a href="javascript:;" name="zambia" rel=""><span class="glyphicon glyphicon-thumbs-up"></span> 赞（0）</a></div>#}
+      <div class="tags news_tags">标签：
+        {% for tag in articles.tag.all %}
+          <a href=""> {{ tag.name }}</a>
+          {% endfor %}
+      </div>
+
+
+
+
+
+      {% include 'pagearticle.html' %}
+
+
+
+      <div class="content-block comment">
+        <h2 class="title"><strong>评论</strong></h2>
+        <form action="{% url 'comment_post' %}" method="post" class="form-inline" id="comment-form">
+        {% csrf_token %}
+          <div class="comment-title">
+            <div class="form-group">
+
+              <label for="commentName">昵称：</label>
+              {{ comment_form.author }}
+            </div>
+            <div class="form-group">
+
+              <label for="commentEmail">邮箱：</label>
+               {{ comment_form.email }}
+            </div>
+          </div>
+          <div class="comment-form">
+            <div class="comment-form-footer">
+                {%  if not request.user.is_authenticated %}
+              <div class="comment-form-text">请先 <a href="{% url 'login' %}">登录</a> 或 <a href="{% url 'reg' %}">注册</a>，也可匿名评论 </div>
+                {% else %}
+                    <div class="comment-form-text">{{ request.user.username }}<a >快来写评论把！</a> <a href="{% url 'logout' %}">注销</a></div>
+                {% endif %}
+              <div class="comment-form-btn">
+                 {{ comment_form.comment }}
+                <button type="submit" class="btn btn-default btn-comment">提交评论</button>
+                  {{ comment_form.article }}
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="comment-content">
+          <ul>
+           {% for comment  in comment_list%}
+                    <li class="alt" id="comment-59418">
+                <div class="top"><a href='{{ comment.url }}' rel='external nofollow' class='url'>{{ comment.username }}</a><span class="time"> @ <a href="#comment-59418" title="">{{ comment.date_publish }}</a></span></div>
+                <div><img alt='' src='{% static 'images/default.jpg' %}' class='avatar avatar-32 photo' height='32' width='32' /></div>
+
+                <div class="body">
+                                <p> {{ comment.content }}</p>
+                </div>
+              </li>
+                {% for children_comment in comment.children_comment %}
+              <li class="alt" id="comment-59542">
+                <div class="reply">
+                  <div class="top"><a href="{{ children_comment.url }}" rel="external nofollow" class="url">{{ comment.username }}</a><span class="time"> @ <a href="#comment-59543" title="">{{ comment.date_publish }}</a></span></div>
+                  <div><img alt="" src="{% static 'images/default.jpg' %}" class="avatar avatar-32 photo" height="32" width="32"></div>
+
+                  <div class="body">
+                                       {{ children_comment.content }}                  </div>
+                </div>
+              </li>
+                {% endfor %}
+                {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+{% endblock %}
